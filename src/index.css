@@ -1,0 +1,775 @@
+* {
+  touch-action: pan-y;
+}
+body {
+  width: 0;
+  background: url(container/image/backgrd.png) no-repeat;
+  background-size: cover;
+}
+p {
+  margin-bottom: 0 !important;
+}
+.fixd-header {
+  position: fixed;
+  top: 0;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  background: url(container/image/titleBack.png) no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+.am-picker-popup-header .am-picker-popup-item {
+  font-size: 15px;
+}
+.error-msg {
+  color: #ff0000;
+  text-align: center;
+  padding: 10px 0;
+}
+.am-tab-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+.am-tab-bar .am-tab-bar-tab-title {
+  color: #635e5e !important;
+}
+#fixd-header .am-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.page-content {
+  padding: 45px 5px;
+}
+.header {
+  margin-top: 10px;
+}
+#chat-page .chat-me {
+  border: none !important;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -20px;
+  overflow: inherit;
+}
+#chat-page .chat-item {
+  border: none !important;
+  overflow: inherit;
+  padding-left: 0;
+}
+#chat-page .chat-me .am-list-extra {
+  flex-basis: auto;
+}
+#chat-page .chat-me .am-list-extra img {
+  width: 30px;
+  height: 30px;
+}
+#chat-page .am-list-thumb img {
+  width: 30px;
+  height: 30px;
+}
+#chat-page .chat-me .am-list-content,
+#chat-page .chat-item .am-list-content {
+  margin-right: 15px;
+  padding: 7px 10px;
+  text-align: left;
+  min-height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  min-width: 40px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+#chat-page .chat-item .am-list-content {
+  margin-right: 0;
+}
+#chat-page .chat-me .am-list-line,
+#chat-page .chat-item .am-list-line {
+  position: relative;
+  right: 0;
+  display: flex;
+  flex: inherit;
+}
+#chat-page .am-grid-icon {
+  display: none;
+}
+#chat-page .am-grid-text {
+  margin-top: 0;
+  font-size: 18px;
+}
+#chat-page .am-grid-text .emoji-sizer,
+#emoji .emoji-sizer {
+  width: 18px !important;
+  height: 18px !important;
+}
+#chat-page .am-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: 10;
+}
+#chat-page .am-list {
+  position: relative;
+  min-height: 20px;
+}
+#emoji .emoji-sizer {
+  margin-right: 15px;
+  margin-bottom: -3px;
+}
+.stick-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+.stick-footer .am-list-body {
+  margin: 0 !important;
+}
+.stick-footer .am-list-item {
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: visible;
+}
+.am-wingblank {
+  margin: 1px 0 0 0 !important;
+}
+.slider-list,
+.slider-slide {
+  height: 151px;
+}
+.slider-slide img {
+  height: 130px !important;
+}
+.am-card {
+  margin: 3px 3px 0 3px !important;
+}
+.b-wrapper {
+  position: absolute;
+  top: 46px !important;
+  bottom: 53px !important;
+  background: none !important;
+}
+.am-list-body {
+  position: static;
+  background: none !important;
+  margin: 0 20px;
+  border-bottom: none;
+  border-top: none;
+}
+html:not([data-scale]) .am-list-body::before,
+html:not([data-scale]) .am-list-body::after {
+  background: none;
+}
+.am-list-item {
+  background: none;
+  padding-left: 0;
+  border: 1px solid #d6d3d3;
+  border-radius: 23px;
+}
+.am-list-item::before {
+  background: none;
+}
+.am-list-body div:not(:last-child) .am-list-line {
+  border-bottom: none;
+}
+.am-list-line::after {
+  background: none !important;
+}
+.am-list-body .am-list-item:last-child {
+  border: 1px solid #d6d3d3;
+}
+.am-list-item .am-input-label.am-input-label-5 {
+  width: 30px;
+}
+.am-button {
+  border-radius: 23px;
+  margin: 0 20px;
+  background: #fff;
+  opacity: .8;
+  color: #60bd8e;
+}
+.am-radio.am-radio-checked .am-radio-inner:after {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+.my-radio .am-radio {
+  padding: 2.5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 15px;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #ccc;
+  font-size: 15px;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #ccc;
+  font-size: 15px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 15px;
+}
+.am-list-item .am-input-extra {
+  overflow: visible ;
+}
+.list .am-list-body {
+  padding: 0 10px;
+  margin: 0;
+  background: #fff !important;
+}
+.list .am-list-body .am-list-item {
+  border-radius: 0 !important;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.list .am-list-body .am-list-item .am-list-line .am-list-brief {
+  font-size: 13px;
+}
+.take-list {
+  bottom: 49px !important;
+}
+.take-list .am-list-item:last-child {
+  border-bottom: 1px solid #a0a0a0;
+}
+.take-list .am-list-thumb img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#root .my-drawer {
+  overflow: hidden;
+}
+.info .am-result {
+  margin-top: 45px;
+  padding: 5px 0;
+  background: transparent;
+}
+.info .my-drawer .am-drawer-sidebar {
+  background: #fff;
+}
+.info .my-drawer .am-drawer-sidebar .am-list-item {
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.info .my-drawer .am-drawer-sidebar .my-list {
+  width: 100%;
+}
+.info .my-drawer .am-drawer-sidebar .my-list .am-list-body {
+  margin: 0;
+}
+.info .my-drawer .am-drawer-sidebar .my-list .am-list-body .am-list-content {
+  font-size: 15px;
+  color: #828181;
+}
+.info .my-drawer .am-drawer-sidebar .my-list .am-list-body .active .am-list-content {
+  color: #60bd8e;
+}
+.info .my-drawer .am-drawer-sidebar .drawer {
+  position: relative;
+  min-height: 376px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar {
+  left: unset;
+  background-color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: none;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar .item {
+  width: 300px;
+  padding: 0;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar .item .am-list-line {
+  padding: 0;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar .item .am-list-line .am-list-content {
+  text-align: center;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar .item .leftItem .am-list-item {
+  background: #ecebeb;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar .item .leftItem .b-wrapper {
+  width: 50%;
+  top: 0 !important;
+  bottom: 0 !important;
+  background: #ecebeb !important;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar .item .rightItem .b-wrapper {
+  width: 50%;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 50%;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-sidebar .am-list-item {
+  border: none;
+}
+.info .my-drawer .am-drawer-sidebar .drawer .am-drawer-content .b-wrapper {
+  top: 0 !important;
+  bottom: 0 !important;
+}
+.info .my-drawer .am-drawer-sidebar .degree,
+.info .my-drawer .am-drawer-sidebar .jobseek,
+.info .my-drawer .am-drawer-sidebar .descript,
+.info .my-drawer .am-drawer-sidebar .wage,
+.info .my-drawer .am-drawer-sidebar .wantarea,
+.info .my-drawer .am-drawer-sidebar .company,
+.info .my-drawer .am-drawer-sidebar .posthold,
+.info .my-drawer .am-drawer-sidebar .base {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.info .my-drawer .am-drawer-sidebar .degree .am-list-extra,
+.info .my-drawer .am-drawer-sidebar .jobseek .am-list-extra,
+.info .my-drawer .am-drawer-sidebar .descript .am-list-extra,
+.info .my-drawer .am-drawer-sidebar .wage .am-list-extra,
+.info .my-drawer .am-drawer-sidebar .wantarea .am-list-extra,
+.info .my-drawer .am-drawer-sidebar .company .am-list-extra,
+.info .my-drawer .am-drawer-sidebar .posthold .am-list-extra,
+.info .my-drawer .am-drawer-sidebar .base .am-list-extra {
+  text-align: left;
+  text-indent: 10px;
+  flex-basis: 100%;
+}
+.info .my-drawer .am-drawer-sidebar .degree .am-list-content,
+.info .my-drawer .am-drawer-sidebar .jobseek .am-list-content,
+.info .my-drawer .am-drawer-sidebar .descript .am-list-content,
+.info .my-drawer .am-drawer-sidebar .wage .am-list-content,
+.info .my-drawer .am-drawer-sidebar .wantarea .am-list-content,
+.info .my-drawer .am-drawer-sidebar .company .am-list-content,
+.info .my-drawer .am-drawer-sidebar .posthold .am-list-content,
+.info .my-drawer .am-drawer-sidebar .base .am-list-content {
+  font-size: 14px;
+}
+.info .my-drawer .am-drawer-sidebar .base .baseItem {
+  margin-top: 10px;
+}
+.info .my-drawer .am-drawer-sidebar .base .baseItem .am-list-content {
+  text-indent: 0px;
+}
+.info .my-drawer .am-drawer-sidebar .base .baseItem p {
+  text-indent: 10px;
+  color: #000;
+}
+.info .my-drawer .am-drawer-sidebar .descript .am-list {
+  width: auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.info .my-drawer .am-drawer-sidebar .descript .am-list .am-list-body {
+  margin: 0;
+}
+.info .my-drawer .am-drawer-sidebar .descript .am-list .am-list-body .am-textarea-control textarea {
+  font-size: 14px;
+}
+.info .my-drawer .am-drawer-sidebar .city {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+.info .my-drawer .am-drawer-sidebar .city .cityHeight {
+  position: absolute;
+  top: 50px;
+  height: calc(50%);
+  overflow: scroll;
+}
+.info .my-drawer .am-drawer-sidebar .city .cityList {
+  margin: 0 10px;
+  position: relative;
+}
+.info .my-drawer .am-drawer-sidebar .city .cityList span {
+  display: block;
+  float: left;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 96px;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 13px;
+  margin: 5px 12px 2px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.info .my-drawer .am-drawer-sidebar .city .cityList .letter {
+  width: 30px;
+  height: 30px;
+  line-height: 26px;
+  border-radius: 50%;
+  background: #60bd8e;
+  color: #fff;
+  padding: 0;
+}
+.info .my-drawer .am-drawer-sidebar .city .cityList .b-wrapper {
+  padding: 0 10px;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+  top: 0px !important;
+  bottom: 0 !important;
+}
+.info .my-drawer .am-drawer-sidebar .city .alpha {
+  position: fixed;
+  right: 5px;
+  top: 0;
+  margin-top: 50px;
+  z-index: 10;
+}
+.info .my-drawer .am-drawer-sidebar .city .alpha .item {
+  color: #60bd8e;
+  font-size: 13px;
+  width: 22px;
+  text-align: center;
+}
+.info .b-wrapper {
+  top: 145px !important;
+}
+.info .am-result .am-result-pic {
+  height: 50px;
+}
+.info .am-list .am-list-header {
+  color: #fff;
+  font-size: 16px;
+}
+.info .am-list-item {
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 1px 1px 5px 1px #4c4949;
+}
+.info .am-list-item .am-list-line-multiple {
+  padding: 0;
+}
+.info .am-list-item .am-list-line-multiple .am-list-item {
+  box-shadow: none;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+.info .am-list-item .am-list-content {
+  font-size: 17px;
+  text-indent: 10px;
+  padding: 5px;
+}
+.info .am-list-content .am-list-brief {
+  font-size: 14px;
+  color: #444242;
+  line-height: 15px;
+  padding: 5px;
+  text-indent: 15px;
+}
+.geniusInfo .am-navbar,
+.bossInfo .am-navbar {
+  background: inherit;
+  border-bottom: 1px solid #dad2d2;
+}
+.geniusInfo .am-list .am-list-header,
+.bossInfo .am-list .am-list-header {
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+}
+.geniusInfo .am-list-item,
+.bossInfo .am-list-item {
+  color: #fff;
+}
+.geniusInfo .am-list-item .am-list-line .am-list-content {
+  flex: unset;
+  color: #e6e1e1;
+}
+.geniusInfo .am-list-item .am-list-line .am-list-extra {
+  font-size: 14px;
+  padding-left: 10px;
+  text-align: left;
+  color: #fff;
+}
+.geniusInfo .am-list-body .am-grid,
+.bossInfo .am-list-body .am-grid {
+  box-shadow: 1px 1px 5px 0px #444242;
+}
+.geniusInfo .am-list-item .am-input-label,
+.bossInfo .am-list-item .am-input-label {
+  width: auto;
+  color: #e6e1e1;
+}
+.geniusInfo .am-list-item .am-input-control input,
+.bossInfo .am-list-item .am-input-control input,
+.geniusInfo .infomation textarea,
+.bossInfo .infomation textarea {
+  color: #fff;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.geniusInfo .infomation .am-textarea-label,
+.bossInfo .infomation .am-textarea-label {
+  padding-left: 15px;
+  color: #e6e1e1;
+}
+.geniusInfo .infomation textarea,
+.bossInfo .infomation textarea {
+  padding: 0;
+}
+.geniusInfo .infomation .am-textarea-control,
+.bossInfo .infomation .am-textarea-control {
+  padding-left: 10px;
+}
+.bossInfo .b-wrapper,
+.geniusInfo .b-wrapper {
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+}
+.geniusInfo .am-list-content {
+  padding-left: 15px;
+}
+.moreInformation {
+  position: relative;
+}
+.moreInformation .am-navbar {
+  border-bottom: 1px solid #ccc;
+}
+.moreInformation .am-navbar .am-navbar-title {
+  color: #000;
+}
+.moreInformation .b-wrapper {
+  padding: 15px 15px 0 15px;
+}
+.moreInformation .b-wrapper .am-list {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.moreInformation .b-wrapper .am-list-item {
+  border-radius: 0;
+  border: none;
+}
+.moreInformation .b-wrapper .am-list-line {
+  padding-right: 0;
+}
+.moreInformation .b-wrapper .am-list-line .am-list-content {
+  font-size: 20px;
+  width: 254px;
+  font-weight: bold;
+  overflow: visible;
+  flex: unset;
+}
+.moreInformation .b-wrapper .am-list-line .am-list-content .am-list-brief {
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+}
+.moreInformation .b-wrapper .am-list-line .am-list-content .am-list-brief .city .iconfont {
+  margin-right: 5px;
+}
+.moreInformation .b-wrapper .am-list-line .am-list-content .am-list-brief .icons {
+  margin-left: 10px;
+}
+.moreInformation .b-wrapper .am-list-line .am-list-content .am-list-brief .icons .iconfont {
+  margin-right: 1px;
+}
+.moreInformation .b-wrapper .am-list-line .am-list-extra {
+  float: right;
+  flex-basis: unset;
+  color: #60bd8e;
+  font-size: 14px;
+  padding-right: 0;
+}
+.moreInformation .b-wrapper .bossname .am-list-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background-size: cover;
+  overflow: hidden;
+}
+.moreInformation .b-wrapper .bossname .am-list-content {
+  font-size: 15px;
+  font-weight: normal;
+}
+.moreInformation .b-wrapper .ocupation {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  word-break: break-all;
+}
+.moreInformation .b-wrapper .ocupation .banden,
+.moreInformation .b-wrapper .ocupation .allList {
+  position: relative;
+  font-size: 15px;
+  color: #7d7a7a;
+  letter-spacing: 1px;
+  line-height: 20px;
+  display: block;
+  overflow: hidden;
+}
+.moreInformation .b-wrapper .ocupation .banden .list,
+.moreInformation .b-wrapper .ocupation .allList .list {
+  overflow: hidden;
+}
+.moreInformation .b-wrapper .ocupation .banden .all,
+.moreInformation .b-wrapper .ocupation .allList .all {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  color: #60bd8e;
+  background: #fff;
+}
+.moreInformation .b-wrapper .ocupation .banden::after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 52px;
+  width: 35px;
+  height: 20px;
+  padding: 0 0 0 10px;
+  background: #fff;
+  color: #60bd8e;
+}
+.moreInformation .b-wrapper .cerrar,
+.moreInformation .b-wrapper .address {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  margin: 10px 0 0 0;
+}
+.moreInformation .b-wrapper .cerrar .requires,
+.moreInformation .b-wrapper .address .requires {
+  display: inline-block;
+  margin: 5px 10px 0 0;
+  border: 1px solid #cabebe;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #7d7a7a;
+}
+.moreInformation .b-wrapper .cerrar .realAd,
+.moreInformation .b-wrapper .address .realAd {
+  color: #7d7a7a;
+  font-size: 14px;
+}
+.moreInformation .b-wrapper .wram {
+  border-top: 1px solid #e4e0e0;
+  padding: 10px 0;
+}
+.moreInformation .b-wrapper .wram p {
+  color: #ff0000;
+  font-size: 14px;
+}
+.moreInformation .b-wrapper .wram p .iconfont {
+  margin-right: 10px;
+}
+.moreInformation .b-wrapper .wram .wram-item {
+  line-height: 30px;
+  font-size: 12px;
+  color: #000;
+}
+.moreInformation .chat {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+  background: #fff;
+}
+.moreInformation .chat .am-button {
+  color: #fff;
+  background: #60bd8e;
+}
+.ant-modal {
+  top: 50% !important;
+  margin-top: -94px !important;
+}
+.ant-modal .ant-modal-body {
+  padding: 10px;
+  font-size: 16px;
+}
+.am-radio-input {
+  width: 15px;
+  height: 15px;
+}
+.am-radio {
+  width: 20px;
+  height: 20px;
+}
+.usercard .am-card-header-content img {
+  display: block;
+  width: 35px;
+  border-radius: 50%;
+}
+.usercard .am-card-header-extra span {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.usercard .am-card-body span {
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px 10px 5px 0;
+  padding: 0 10px;
+  background: #f1ecec;
+  border-radius: 3px;
+  color: #a7a7a7;
+}
+.moreInformation .b-wrapper .bossname .am-list-thumb {
+  border: none;
+}
+.moreInformation .am-list-item img {
+  width: 100%;
+  height: 100%;
+}
+.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
+  width: 33px !important;
+}
+.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-text {
+  margin-top: 0 !important;
+  font-size: 12px;
+}
+.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
+  margin-top: 5px;
+}
+.my-drawer {
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.my-drawer .am-search {
+  background: #fff;
+}
+.my-drawer .am-drawer-sidebar {
+  left: 0;
+  right: 0;
+  z-index: 110;
+  background-color: #f3f0f0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.my-drawer .am-drawer-sidebar .am-search-input {
+  background-color: #f3f0f0;
+  border-radius: 14px;
+}
+.my-drawer .am-drawer-sidebar .am-search-cancel {
+  color: #000;
+}
+.my-drawer .am-drawer-sidebar .am-list {
+  width: 300px;
+  padding: 0;
+}
+.am-drawer.am-drawer-right .am-drawer-draghandle {
+  width: 0;
+}

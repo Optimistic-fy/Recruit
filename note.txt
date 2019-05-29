@@ -1,0 +1,30 @@
+1.��װredux
+$npm install --save redux
+
+2.����eject�γ�webpack�ļ�
+$npm run eject
+
+3.��װexpress
+$npm install --save express
+
+4.��װnodemon�Զ�����server.js
+$npm install -g nodemon
+
+5.���ز���װMongoDB
+
+6.��װmongoose
+$npm install mongoose --save
+
+7.��װantd
+$npm install antd-mobile@next --save
+
+8.��װcookie-parser
+$npm install cookie-parser --save
+
+
+proxy不起作用
+安装了$npm install http-proxy-middleware
+后关闭运行的东西   重启后可代理
+
+  npm run eject后配置相应文件调用less
+  https://www.cnblogs.com/zhouyangla/p/9607862.html
