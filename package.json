@@ -51,7 +51,7 @@
     "rc-queue-anim": "^1.6.12",
     "react": "^16.4.2",
     "react-bscroll": "^1.0.7",
-    "react-dev-utils": "^5.0.2",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.2",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
